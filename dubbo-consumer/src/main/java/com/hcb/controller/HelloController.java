@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/hello")
 public class HelloController {
-    @Reference
+    @Reference(version = "test")
     IHelloService ihelloService;
     @Resource
     private UserService userService;
